@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shell</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="shell-container">
+        <textarea id="shell-input" rows="1" cols="50"></textarea>
+        <button id="shell-run-btn">Run</button>
+        <pre id="shell-output"></pre>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#shell-run-btn').click(function() {
+                let command = $('#shell-input').val();
+                $('#shell-input').val('');
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/shell/run',
+                    data: {
+                        'command': command
+                    },
+                    success: function(data) {
+                        $('#shell-output').append(data);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

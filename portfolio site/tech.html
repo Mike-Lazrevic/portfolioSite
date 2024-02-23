@@ -1,0 +1,24 @@
+def changeChar():
+    # Read the first lines from source files
+    with open("sourceM.txt", "r") as sourceMario:
+        mario_char = sourceMario.readline().strip()  # Read the first line and remove trailing newline
+
+    with open("sourceE.txt", "r") as sourceEmpty:
+        empty_char = sourceEmpty.readline().strip()
+
+    with open("sourceT.txt", "r") as sourceTreasure:
+        treasure_char = sourceTreasure.readline().strip()
+
+    # Overwrite the corresponding lines in InputData.txt
+    with open("InputData.txt", "r+") as input_data:
+        lines = input_data.readlines()
+        lines[5] = " " + treasure_char +" " +'\n'  
+        lines[6] = " " + mario_char + " " + '\n'  
+        lines[4] = " " +empty_char + " " + '\n' 
+
+        input_data.seek(0)  # Move to the beginning of the file
+        input_data.writelines(lines)  # Write the modified content back to the file
+        input_data.truncate()  # Truncate the file if new content is shorter than the old content
+
+
+changeChar()

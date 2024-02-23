@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="source-files">
+            <label for="sourceMario">Mario character:</label>
+            <textarea id="sourceMario"></textarea>
+            <label for="sourceEmpty">Path character:</label>
+            <textarea id="sourceEmpty"></textarea>
+            <label for="sourceTreasure">Treasure or Bomb Character:</label>
+            <textarea id="sourceTreasure"></textarea>
+            <button onclick="updateInputData()">Update</button>
+            <button onclick="runMarioGame()">Run</button>
+            <button onclick="restart()">Restart</button>
+        </div>
+        <div class="shell">
+            <!-- Added title attribute for accessibility -->
+            <iframe id="python-shell" src="about:blank" title="Python Shell"></iframe>
+        </div>
+    </div>
+</body>
+</html>
