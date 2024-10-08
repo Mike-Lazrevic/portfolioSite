@@ -1,17 +1,12 @@
-# portfolioSite
-First Fullstack website to act as a portfolio to showcase my growing web development skills and a place to display my future projects.
+#Portfolio Site
+This is my first full-stack website, designed as a portfolio to showcase my growing web development skills and serve as a hub for future projects.
 
+#Main Page
+The main page is fully interactive, built using HTML, CSS, and JavaScript. It is optimized for both PC and mobile devices. On mobile, the top menu adapts to screen size, switching to a mobile-friendly layout using JavaScript for enhanced usability.
 
-# Main Page
-So the main page is complete and is fully interactive with HTML, CSS, and javascript. 
-You are able to use it comfortably with a PC and mobile devide since on mobile, the top menu adjust to the display screen size and shift to a mobile friendly appraoch (javascript)
+#First Project
+I'm thrilled to showcase my first project! It's an updated version of a project I originally developed in my introductory Computing Science course, now with an added customizable text file for users to modify the game and run it. This triggers a Python server where I first implemented the FLASK framework. Although I’m still learning, it has been a powerful tool.
 
-# first project!
-I am so excited to showcase my first project. It is the previous project I developed in my intro to COmputing Science course, but I added a custamizable text file for the user
-to change the game and then click run!
-This initiates a python server where I first used the framework FLASK, which is so powerful, but I am still learning. It does not fully work, but I will aim to complete it 
-by Feb 26!!!
+The project isn’t fully functional yet, but I plan to complete it by the end of the year! Stay tuned, and once it's ready, I’ll upload the live version of the website.
 
-So please come back to visit this project and then I will upload the website live to the internet the same day it all works.
-
-Thanks!
+Thanks for visiting!
